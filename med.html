@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Situação Alunos</title>
+    <link rel="stylesheet" type="text/css" href="med_stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+
+    <script type="text/javascript">
+      var nome = prompt('Informe o nome do aluno: ');
+      var nota = prompt('Informe a nota do aluno: ');
+      var media = 7;
+    </script>
+
+  </head>
+  <body>
+
+    <div id="logo">
+      <figure>
+        <a href="index.html"><img src="./img/pass_logo2.png" alt=""></a>
+      </figure>
+    </div>
+
+    <div id="main_title">
+      <h2>Cálculo Situação do Aluno</h2>
+    </div>
+    <!-- Cálculo da nota do aluno -->
+    <script type="text/javascript">
+      document.write('<div class="nome"><p>Nome: ' + nome + '</p></div>');
+        document.write('<div class="nota"><p>Nota informada: ' + nota + '</p></div>');
+
+      if (parseInt(nota) >= media && parseInt(nota) <= 10) {
+        document.write('<div class="situacao"><p>Situação: Aprovado!</p></div>');
+
+          }else if (parseInt(nota) >= 5 && parseInt(nota) <= 6) {
+            document.write('<div class="situacao"><p>Situação: Recuperação!</p></div>');
+
+            }else if (parseInt(nota) >= 0 && parseInt(nota) <= 4) {
+                document.write('<div class="situacao"><p>Situação: Reprovado!</p></div>');
+
+                }else {
+                    document.write('<div class="situacao"><p>Situação: Nota inválida!</p></div>');
+                    }
+    </script>
+  </body>
+</html>

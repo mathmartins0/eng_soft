@@ -1,0 +1,41 @@
+* {
+  font-family: 'helvetica neue',sans-serif;
+  margin: 0;
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center
+}
+
+body {
+  background: url('./img/back3.png');
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+/******************************* ID's ****************************************/
+
+#main_title h2 {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 60px;
+}
+
+#logo img {
+  width: 250px;
+}
+
+
+/******************************* Class ****************************************/
+
+.nome p,
+.casa p,
+.meta p,
+.situacao p {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 20px;
+}

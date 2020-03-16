@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Situação Alunos</title>
+    <link rel="stylesheet" type="text/css" href="abono_stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+
+    <script type="text/javascript">
+      var nome = prompt('Informe o nome do colaborador: ');
+      var casa = prompt('Informe o tempo de casa do colaborador: ');
+      var meta = prompt('Informe a eficiencia do colaborador: ');
+
+      var casa_min = 1;
+      var meta_min = 65;
+    </script>
+
+  </head>
+  <body>
+
+    <div id="logo">
+      <figure>
+        <a href="index.html"><img src="./img/pass_logo2.png" alt=""></a>
+      </figure>
+    </div>
+
+    <div id="main_title">
+      <h2>Cálculo Recebimento Abono</h2>
+    </div>
+    <!-- Cálculo da nota do aluno -->
+    <script type="text/javascript">
+        document.write('<div class="nome"><p>Nome: ' + nome + '</p></div>');
+        document.write('<div class="casa"><p>Tempo de casa: ' + casa + '</p></div>');
+        document.write('<div class="meta"><p>Eficiênia: ' + meta + '</p></div>');
+
+      if (parseInt(casa) >= casa_min && parseInt(meta) >= meta_min) {
+        document.write('<div class="situacao"><p>Situação: Recebe</p></div>');
+
+      }else {
+        document.write('<div class="situacao"><p>Situação: Não recebe!</p></div>');
+      }
+    </script>
+  </body>
+</html>
